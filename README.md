@@ -76,3 +76,23 @@ The task is to create an intelligent system capable of:
   -  predict-test.py
   -  requirements.txt
 
+## Running using Waitress as WSGI server
+Please use predict.py and predict-test.py for testing model prediction.
+1. Create and activate .venv:
+ ```
+   python -m venv venv
+venv\Scripts\activate
+ ```
+3. Install dependencies:
+ ```
+pip install -r requirements.txt
+ ```
+4. Run predict.py:
+```
+waitress-serve --listen=0.0.0.0:9696 predict:app
+```
+5. Run predict-test.py and use the command line:
+```
+python predict-test.py
+```
+
