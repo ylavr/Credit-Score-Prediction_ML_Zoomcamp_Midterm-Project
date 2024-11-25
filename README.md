@@ -9,8 +9,8 @@ This project provides a machine learning-based app for predicting a person's cre
 It uses a Flask web application to serve the trained model and Docker for containerization.
 The goal is to help a global finance company automate the classification of individuals into predefined credit score brackets, reducing manual effort and increasing efficiency.
 
-Dataset contains 28 columns and 100K rows:
-Target feature is "credit_score" ("Good," "Poor," "Standard"):
+Dataset contains **28 columns** and **100K rows**:
+Target feature is "credit_score" : **"Good," "Poor," "Standard"**.
 
 | **No** | **Feature**                | **Description**                                                                 |
 |--------|----------------------------|---------------------------------------------------------------------------------|
@@ -54,7 +54,25 @@ path = kagglehub.dataset_download("parisrohan/credit-score-classification")
 
 Managing credit risk is a critical task for financial institutions. Over the years, this company has gathered vast amounts of customer data, including banking and credit information.
 The task is to create an intelligent system capable of:
-- Classifying individuals into credit score brackets (e.g., Good, Standard, Poor).
+- Classifying individuals into credit score classes.
 - Reducing the manual workload for the company's analysts.
 - Delivering accurate predictions for better risk management.
+
+## Files description
+
+  ### The dataset cleaning, analysis and model selection were conducted using Jupyter Notebook. You can find the corresponding notebook file in this repository:
+  - notebook_cleaning and preprocessing.ipynb
+  - notebook_EDA_model_selection.ipynb
+  ### Cleaned dataset and dataset for testing final model:
+  -  cleaned_df.csv
+  -  df_test.csv
+  ### Trained final model with best parameters and pickled files:
+  -  train.py
+  -  final_model.pkl
+  -  dict_vectorizer.pkl
+  -  label_encoder.pkl
+  ### Files for running the project locally:
+  -  predict.py
+  -  predict-test.py
+  -  requirements.txt
 
