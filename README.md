@@ -46,7 +46,9 @@ Target feature is "credit_score" ("Good," "Poor," "Standard"):
 
 ## Download the latest version
 The dataset from Kaggle:
+ ```
 path = kagglehub.dataset_download("parisrohan/credit-score-classification")
+ ```
 
 ## Problem Statement
 
